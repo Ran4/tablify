@@ -3,6 +3,7 @@ from collections import Counter
 
 ColumnIdx = int
 
+
 def find_column_sizes(lines: List, padding=0) -> Dict[ColumnIdx, int]:
     column_sizes: Counter = Counter()
 
@@ -58,7 +59,6 @@ def tablify(data: Iterable[Iterable[Any]]) -> str:
         divider_string,
         *body_strings,
     ])
-
 
 
 if __name__ == "__main__":
